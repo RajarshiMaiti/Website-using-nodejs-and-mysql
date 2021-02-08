@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Page</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+ 
+.container {  
+    padding: 50px;  
+  background-color: lightblue;  
+}  
+  
+input[type=text], input[type=password], textarea {  
+  width: 100%;  
+  padding: 15px;  
+  margin: 5px 0 22px 0;  
+  display: inline-block;  
+  border: none;  
+  background: #f1f1f1;  
+}  
+input[type=text]:focus, input[type=password]:focus {  
+  background-color: orange;  
+  outline: none;  
+}  
+
+
+
+
+
+
+</style>
+<body>
+
+    <!-- Navbar -->
+    <div class="w3-top">
+    <div class="w3-bar w3-black w3-card">
+        <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+        <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+        <a href="#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ABOUT</a>
+        <a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small">TOUR</a>
+        <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
+        <div class="w3-dropdown-hover w3-hide-small">
+        <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>     
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+            <a href="merchandise" class="w3-bar-item w3-button">Merchandise</a>
+            <a href="myteam" class="w3-bar-item w3-button">MyTeam</a>
+            <a href="media" class="w3-bar-item w3-button">Media</a>
+        </div>
+        </div>
+        <a href="loginpage" class="w3-bar-item w3-button w3-padding-large w3-hide-small">LOGIN</a>
+        <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+        <a href="data" class="w3-bar-item w3-button w3-padding-large w3-hide-small">REGISTER</a>
+        <a href="update" class="w3-bar-item w3-button w3-padding-large w3-hide-small">MODIFY</a>
+    </div>
+    </div>
+
+
+    <header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+      <img class="w3-image" src="https://i.pinimg.com/originals/77/c8/7d/77c87d13f7e540caf44519e21752e8d3.jpg" alt="Architecture" width="1500" height="800">
+      <div class="w3-display-middle w3-margin-top w3-center">
+      </div>
+    </header>
+
+
+
+    <form action="/update" method="POST"  
+  <div class="container">  
+  <center>  <h1> Modify your record</h1> </center>  
+  <hr>  
+  <label> Name </label>   
+<input type="text" name="Name" placeholder= "Name" size="15" required />   
+<label> Address </label>   
+<input type="text" name="Address" placeholder="Address" size="15" required />   
+<label> Country </label>    
+<input type="text" name="Country" placeholder="Country" size="15"required />   
+<label> Phone </label>     
+<input type="text" name="Phone" placeholder="Phone" size="10"required>   
+<label> id </label>     
+<input type="text" name="id" placeholder="id" size="10"required>   
+</textarea>  
+  
+    <button type="submit" class="registerbtn">Submit</button>    
+</form>  
+</body>  
+</html>  
